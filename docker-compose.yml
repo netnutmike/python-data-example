@@ -1,0 +1,134 @@
+# Docker Compose configuration for Occupation Data Reports
+version: '3.8'
+
+services:
+  # Main application service
+  occupation-reports:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: production
+      args:
+        BUILD_DATE: ${BUILD_DATE:-$(date -u +'%Y-%m-%dT%H:%M:%SZ')}
+        VERSION: ${VERSION:-1.0.0}
+        VCS_REF: ${VCS_REF:-$(git rev-parse --short HEAD)}
+    image: occupation-reports:${VERSION:-latest}
+    container_name: occupation-reports-app
+    restart: unless-stopped
+    
+    # Environment variables
+    environment:
+      - PYTHONPATH=/app
+      - PYTHONUNBUFFERED=1
+      - PYTHONDONTWRITEBYTECODE=1
+      - MPLBACKEND=Agg
+      - ORS_CONFIG_DIR=/app/config
+      - ORS_DATA_DIR=/app/data
+      - ORS_OUTPUT_DIR=/app/reports
+      - ORS_LOG_DIR=/app/logs
+      - LOG_LEVEL=${LOG_LEVEL:-INFO}
+    
+    # Volume mounts
+    volumes:
+      # Data files (input)
+      - ./data:/app/data:ro
+      # Generated reports (output)
+      - ./reports:/app/reports:rw
+      # Application logs
+      - ./logs:/app/logs:rw
+      # Configuration files
+      - ./config:/app/config:rw
+      # Temporary files
+      - occupation-reports-temp:/app/temp:rw
+    
+    # Resource limits
+    deploy:
+      resources:
+        limits:
+          memory: 4G
+          cpus: '2.0'
+        reservations:
+          memory: 1G
+          cpus: '0.5'
+    
+    # Health check
+    healthcheck:
+      test: ["CMD", "python", "-m", "src.main", "status"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    
+    # Default command (can be overridden)
+    command: ["python", "-m", "src.main", "--help"]
+    
+    # Network configuration
+    networks:
+      - occupation-reports-network
+
+  # Development service (optional)
+  occupation-reports-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: development
+      args:
+        BUILD_DATE: ${BUILD_DATE:-$(date -u +'%Y-%m-%dT%H:%M:%SZ')}
+        VERSION: ${VERSION:-1.0.0-dev}
+        VCS_REF: ${VCS_REF:-$(git rev-parse --short HEAD)}
+    image: occupation-reports:${VERSION:-latest}-dev
+    container_name: occupation-reports-dev
+    restart: "no"
+    
+    # Environment variables
+    environment:
+      - PYTHONPATH=/app
+      - PYTHONUNBUFFERED=1
+      - PYTHONDONTWRITEBYTECODE=1
+      - MPLBACKEND=Agg
+      - ORS_CONFIG_DIR=/app/config
+      - ORS_DATA_DIR=/app/data
+      - ORS_OUTPUT_DIR=/app/reports
+      - ORS_LOG_DIR=/app/logs
+      - LOG_LEVEL=DEBUG
+    
+    # Volume mounts (including source code for development)
+    volumes:
+      # Source code (for development)
+      - .:/app:rw
+      # Data files
+      - ./data:/app/data:ro
+      # Generated reports
+      - ./reports:/app/reports:rw
+      # Application logs
+      - ./logs:/app/logs:rw
+      # Configuration files
+      - ./config:/app/config:rw
+      # Temporary files
+      - occupation-reports-temp:/app/temp:rw
+    
+    # Interactive terminal
+    stdin_open: true
+    tty: true
+    
+    # Default command for development
+    command: ["bash"]
+    
+    # Network configuration
+    networks:
+      - occupation-reports-network
+    
+    # Only start when explicitly requested
+    profiles:
+      - development
+
+# Named volumes
+volumes:
+  occupation-reports-temp:
+    driver: local
+
+# Networks
+networks:
+  occupation-reports-network:
+    driver: bridge
+    name: occupation-reports-net

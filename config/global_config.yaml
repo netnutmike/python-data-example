@@ -1,0 +1,10 @@
+application_name: Occupation Data Reports
+cache_directory: .cache
+cache_enabled: true
+debug_mode: false
+default_data_source: ''
+log_level: INFO
+max_workers: 4
+temp_directory: .temp
+timezone: UTC
+version: 1.0.0

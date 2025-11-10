@@ -1,0 +1,37 @@
+"2023 Occupational Requirements Survey Estimates
+
+Source: U.S. Bureau of Labor Statistics, Occupational Requirements Survey
+website: www.bls.gov/ors
+email: orsinfo@bls.gov
+phone: 202-691-6199
+
+Release date: 08/15/2024","Technical note:
+
+Sample size - The ORS is a nationally representative establishment-based survey. Estimates are produced from a probability sample of 56,300 establishments. There were 25,100 private industry and 5,000 state and local government responding establishments that provided approximately 148,600 occupational observations. 
+
+The 2023 estimates represent 145,866,200 civilian workers. 
+
+The 2023 estimates are an aggregate of five annual samples collected between September 2018 and July 2023 and represent the final estimates for the second wave of ORS. Preliminary estimates were produced annually as additional samples were collected. Within the ORS survey, a wave is considered the combination of multiple samples used to produce final estimates. Final estimates were last published for the first wave of ORS with a reference year of 2018.   
+
+Standard errors - Standard errors provide users a measure of the precision of an estimate to ensure that it is within an acceptable range for their intended purpose. Collected and imputed data are included in the standard error calculation. For further information and how to use the standard errors see www.bls.gov/ors/se.htm. 
+
+Concepts, design, calculation and imputation methodology are available in the Handbook of Methods, see www.bls.gov/opub/hom/ors/home.htm."
+Field,Field Description
+Series ID,Unique 20 character code identifying the specific estimate series.
+Series title,Description of the series id.
+SOC 2018 code,"6-digit occupation code as defined 2018 Standard Occupational Classification (SOC) system, see www.bls.gov/soc."
+Occupation,Description of the occupation code.
+Requirement,"Main requirement type: physical demands, environmental conditions, education, training, and experience, as well as cognitive and mental requirements."
+Estimate code,The unique code for the datatype and specific requirement.
+Estimate text,Description of datatype and specific requirement.
+Category code,The code indicating the group of related estimates.
+Category,Description of a group of related estimates.
+Additive code,The code indicating the group of related estimates that sum to together.
+Additive,Description of related estimates that sum to together. 
+Datatype code,The code indicating the estimate measurement.
+Datatype,Description of the estimate measurement.
+Estimate,Estimate value. 
+Standard error,Standard error associated with the estimate.
+Data footnote,Footnote code associated with the series id's data value. See footnote codes tab for more information.
+Standard error footnote,Footnote code associated with the series id's standard error. See footnote codes tab for more information.
+Series footnote,Footnote code associated with the series id. See footnote codes tab for more information.

@@ -1,0 +1,476 @@
+additive_category:
+  chart_config:
+    chart_type: bar
+    color_scheme: default
+    export_dpi: 300
+    font_size: 12
+    height: 600
+    interactive: true
+    show_grid: true
+    show_legend: true
+    title_font_size: 16
+    width: 800
+  custom_parameters: {}
+  description: Default configuration for additive_category report
+  enabled: true
+  export_config:
+    compress_output: false
+    filename_pattern: '{report_type}_{timestamp}'
+    formats:
+    - html
+    - pdf
+    - csv
+    html_template: default
+    include_metadata: true
+    include_raw_data: true
+    output_directory: reports
+    pdf_template: default
+  filter_config:
+    allowed_filters: []
+    default_filters: {}
+    filter_validation: {}
+  report_type: additive_category
+  template_overrides: {}
+  title: Additive Category
+cognitive_requirements:
+  chart_config:
+    chart_type: bar
+    color_scheme: default
+    export_dpi: 300
+    font_size: 12
+    height: 600
+    interactive: true
+    show_grid: true
+    show_legend: true
+    title_font_size: 16
+    width: 800
+  custom_parameters: {}
+  description: Default configuration for cognitive_requirements report
+  enabled: true
+  export_config:
+    compress_output: false
+    filename_pattern: '{report_type}_{timestamp}'
+    formats:
+    - html
+    - pdf
+    - csv
+    html_template: default
+    include_metadata: true
+    include_raw_data: true
+    output_directory: reports
+    pdf_template: default
+  filter_config:
+    allowed_filters: []
+    default_filters: {}
+    filter_validation: {}
+  report_type: cognitive_requirements
+  template_overrides: {}
+  title: Cognitive Requirements
+comprehensive_summary:
+  chart_config:
+    chart_type: bar
+    color_scheme: default
+    export_dpi: 300
+    font_size: 12
+    height: 600
+    interactive: true
+    show_grid: true
+    show_legend: true
+    title_font_size: 16
+    width: 800
+  custom_parameters: {}
+  description: Default configuration for comprehensive_summary report
+  enabled: true
+  export_config:
+    compress_output: false
+    filename_pattern: '{report_type}_{timestamp}'
+    formats:
+    - html
+    - pdf
+    - csv
+    html_template: default
+    include_metadata: true
+    include_raw_data: true
+    output_directory: reports
+    pdf_template: default
+  filter_config:
+    allowed_filters: []
+    default_filters: {}
+    filter_validation: {}
+  report_type: comprehensive_summary
+  template_overrides: {}
+  title: Comprehensive Summary
+correlation_analysis:
+  chart_config:
+    chart_type: bar
+    color_scheme: default
+    export_dpi: 300
+    font_size: 12
+    height: 600
+    interactive: true
+    show_grid: true
+    show_legend: true
+    title_font_size: 16
+    width: 800
+  custom_parameters: {}
+  description: Default configuration for correlation_analysis report
+  enabled: true
+  export_config:
+    compress_output: false
+    filename_pattern: '{report_type}_{timestamp}'
+    formats:
+    - html
+    - pdf
+    - csv
+    html_template: default
+    include_metadata: true
+    include_raw_data: true
+    output_directory: reports
+    pdf_template: default
+  filter_config:
+    allowed_filters: []
+    default_filters: {}
+    filter_validation: {}
+  report_type: correlation_analysis
+  template_overrides: {}
+  title: Correlation Analysis
+data_quality:
+  chart_config:
+    chart_type: bar
+    color_scheme: default
+    export_dpi: 300
+    font_size: 12
+    height: 600
+    interactive: true
+    show_grid: true
+    show_legend: true
+    title_font_size: 16
+    width: 800
+  custom_parameters: {}
+  description: Default configuration for data_quality report
+  enabled: true
+  export_config:
+    compress_output: false
+    filename_pattern: '{report_type}_{timestamp}'
+    formats:
+    - html
+    - pdf
+    - csv
+    html_template: default
+    include_metadata: true
+    include_raw_data: true
+    output_directory: reports
+    pdf_template: default
+  filter_config:
+    allowed_filters: []
+    default_filters: {}
+    filter_validation: {}
+  report_type: data_quality
+  template_overrides: {}
+  title: Data Quality
+environmental_risk:
+  chart_config:
+    chart_type: bar
+    color_scheme: default
+    export_dpi: 300
+    font_size: 12
+    height: 600
+    interactive: true
+    show_grid: true
+    show_legend: true
+    title_font_size: 16
+    width: 800
+  custom_parameters: {}
+  description: Default configuration for environmental_risk report
+  enabled: true
+  export_config:
+    compress_output: false
+    filename_pattern: '{report_type}_{timestamp}'
+    formats:
+    - html
+    - pdf
+    - csv
+    html_template: default
+    include_metadata: true
+    include_raw_data: true
+    output_directory: reports
+    pdf_template: default
+  filter_config:
+    allowed_filters: []
+    default_filters: {}
+    filter_validation: {}
+  report_type: environmental_risk
+  template_overrides: {}
+  title: Environmental Risk
+establishment_coverage:
+  chart_config:
+    chart_type: bar
+    color_scheme: default
+    export_dpi: 300
+    font_size: 12
+    height: 600
+    interactive: true
+    show_grid: true
+    show_legend: true
+    title_font_size: 16
+    width: 800
+  custom_parameters: {}
+  description: Default configuration for establishment_coverage report
+  enabled: true
+  export_config:
+    compress_output: false
+    filename_pattern: '{report_type}_{timestamp}'
+    formats:
+    - html
+    - pdf
+    - csv
+    html_template: default
+    include_metadata: true
+    include_raw_data: true
+    output_directory: reports
+    pdf_template: default
+  filter_config:
+    allowed_filters: []
+    default_filters: {}
+    filter_validation: {}
+  report_type: establishment_coverage
+  template_overrides: {}
+  title: Establishment Coverage
+occupation_distribution:
+  chart_config:
+    chart_type: bar
+    color_scheme: default
+    export_dpi: 300
+    font_size: 12
+    height: 600
+    interactive: true
+    show_grid: true
+    show_legend: true
+    title_font_size: 16
+    width: 800
+  custom_parameters: {}
+  description: Default configuration for occupation_distribution report
+  enabled: true
+  export_config:
+    compress_output: false
+    filename_pattern: '{report_type}_{timestamp}'
+    formats:
+    - html
+    - pdf
+    - csv
+    html_template: default
+    include_metadata: true
+    include_raw_data: true
+    output_directory: reports
+    pdf_template: default
+  filter_config:
+    allowed_filters: []
+    default_filters: {}
+    filter_validation: {}
+  report_type: occupation_distribution
+  template_overrides: {}
+  title: Occupation Distribution
+physical_demands:
+  chart_config:
+    chart_type: bar
+    color_scheme: default
+    export_dpi: 300
+    font_size: 12
+    height: 600
+    interactive: true
+    show_grid: true
+    show_legend: true
+    title_font_size: 16
+    width: 800
+  custom_parameters: {}
+  description: Default configuration for physical_demands report
+  enabled: true
+  export_config:
+    compress_output: false
+    filename_pattern: '{report_type}_{timestamp}'
+    formats:
+    - html
+    - pdf
+    - csv
+    html_template: default
+    include_metadata: true
+    include_raw_data: true
+    output_directory: reports
+    pdf_template: default
+  filter_config:
+    allowed_filters: []
+    default_filters: {}
+    filter_validation: {}
+  report_type: physical_demands
+  template_overrides: {}
+  title: Physical Demands
+public_interaction:
+  chart_config:
+    chart_type: bar
+    color_scheme: default
+    export_dpi: 300
+    font_size: 12
+    height: 600
+    interactive: true
+    show_grid: true
+    show_legend: true
+    title_font_size: 16
+    width: 800
+  custom_parameters: {}
+  description: Default configuration for public_interaction report
+  enabled: true
+  export_config:
+    compress_output: false
+    filename_pattern: '{report_type}_{timestamp}'
+    formats:
+    - html
+    - pdf
+    - csv
+    html_template: default
+    include_metadata: true
+    include_raw_data: true
+    output_directory: reports
+    pdf_template: default
+  filter_config:
+    allowed_filters: []
+    default_filters: {}
+    filter_validation: {}
+  report_type: public_interaction
+  template_overrides: {}
+  title: Public Interaction
+skills_training:
+  chart_config:
+    chart_type: bar
+    color_scheme: default
+    export_dpi: 300
+    font_size: 12
+    height: 600
+    interactive: true
+    show_grid: true
+    show_legend: true
+    title_font_size: 16
+    width: 800
+  custom_parameters: {}
+  description: Default configuration for skills_training report
+  enabled: true
+  export_config:
+    compress_output: false
+    filename_pattern: '{report_type}_{timestamp}'
+    formats:
+    - html
+    - pdf
+    - csv
+    html_template: default
+    include_metadata: true
+    include_raw_data: true
+    output_directory: reports
+    pdf_template: default
+  filter_config:
+    allowed_filters: []
+    default_filters: {}
+    filter_validation: {}
+  report_type: skills_training
+  template_overrides: {}
+  title: Skills Training
+statistical_precision:
+  chart_config:
+    chart_type: bar
+    color_scheme: default
+    export_dpi: 300
+    font_size: 12
+    height: 600
+    interactive: true
+    show_grid: true
+    show_legend: true
+    title_font_size: 16
+    width: 800
+  custom_parameters: {}
+  description: Default configuration for statistical_precision report
+  enabled: true
+  export_config:
+    compress_output: false
+    filename_pattern: '{report_type}_{timestamp}'
+    formats:
+    - html
+    - pdf
+    - csv
+    html_template: default
+    include_metadata: true
+    include_raw_data: true
+    output_directory: reports
+    pdf_template: default
+  filter_config:
+    allowed_filters: []
+    default_filters: {}
+    filter_validation: {}
+  report_type: statistical_precision
+  template_overrides: {}
+  title: Statistical Precision
+work_pace_autonomy:
+  chart_config:
+    chart_type: bar
+    color_scheme: default
+    export_dpi: 300
+    font_size: 12
+    height: 600
+    interactive: true
+    show_grid: true
+    show_legend: true
+    title_font_size: 16
+    width: 800
+  custom_parameters: {}
+  description: Default configuration for work_pace_autonomy report
+  enabled: true
+  export_config:
+    compress_output: false
+    filename_pattern: '{report_type}_{timestamp}'
+    formats:
+    - html
+    - pdf
+    - csv
+    html_template: default
+    include_metadata: true
+    include_raw_data: true
+    output_directory: reports
+    pdf_template: default
+  filter_config:
+    allowed_filters: []
+    default_filters: {}
+    filter_validation: {}
+  report_type: work_pace_autonomy
+  template_overrides: {}
+  title: Work Pace Autonomy
+workforce_insights:
+  chart_config:
+    chart_type: bar
+    color_scheme: default
+    export_dpi: 300
+    font_size: 12
+    height: 600
+    interactive: true
+    show_grid: true
+    show_legend: true
+    title_font_size: 16
+    width: 800
+  custom_parameters: {}
+  description: Default configuration for workforce_insights report
+  enabled: true
+  export_config:
+    compress_output: false
+    filename_pattern: '{report_type}_{timestamp}'
+    formats:
+    - html
+    - pdf
+    - csv
+    html_template: default
+    include_metadata: true
+    include_raw_data: true
+    output_directory: reports
+    pdf_template: default
+  filter_config:
+    allowed_filters: []
+    default_filters: {}
+    filter_validation: {}
+  report_type: workforce_insights
+  template_overrides: {}
+  title: Workforce Insights

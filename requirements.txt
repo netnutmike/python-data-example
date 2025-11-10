@@ -1,0 +1,56 @@
+# Core data processing and analysis
+pandas>=1.5.0,<3.0.0
+numpy>=1.21.0,<2.0.0
+scipy>=1.9.0,<2.0.0
+
+# Visualization libraries
+plotly>=5.10.0,<6.0.0
+matplotlib>=3.5.0,<4.0.0
+seaborn>=0.11.0,<1.0.0
+
+# Export and reporting
+jinja2>=3.1.0,<4.0.0
+weasyprint>=56.0,<61.0
+reportlab>=3.6.0,<5.0.0
+pillow>=9.0.0,<11.0.0
+
+# Configuration management
+pyyaml>=6.0,<7.0.0
+pydantic>=1.10.0,<3.0.0
+
+# System monitoring and performance
+psutil>=5.9.0,<6.0.0
+
+# Statistical analysis enhancements
+scikit-learn>=1.1.0,<2.0.0
+statsmodels>=0.13.0,<1.0.0
+
+# File format support
+openpyxl>=3.0.0,<4.0.0  # For Excel file support
+xlrd>=2.0.0,<3.0.0      # For legacy Excel files
+
+# Command line interface enhancements
+click>=8.0.0,<9.0.0
+rich>=12.0.0,<14.0.0    # For enhanced CLI output
+tqdm>=4.64.0,<5.0.0     # For progress bars
+
+# Logging and monitoring
+structlog>=22.0.0,<24.0.0
+
+# Development and testing (optional)
+pytest>=7.0.0,<8.0.0
+pytest-cov>=4.0.0,<5.0.0
+pytest-mock>=3.10.0,<4.0.0
+black>=22.0.0,<24.0.0
+flake8>=5.0.0,<7.0.0
+mypy>=0.991,<2.0.0
+isort>=5.10.0,<6.0.0
+
+# Documentation (optional)
+sphinx>=5.0.0,<8.0.0
+sphinx-rtd-theme>=1.0.0,<3.0.0
+myst-parser>=0.18.0,<3.0.0
+
+# Security scanning (optional)
+bandit>=1.7.0,<2.0.0
+safety>=2.0.0,<4.0.0
